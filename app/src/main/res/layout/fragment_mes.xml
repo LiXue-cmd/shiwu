@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="生活应用"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:background="@color/colorAccent"
+        />
+    <Button
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:text="相机拍照识别"
+        android:background="@drawable/btn_1"
+        android:id="@+id/paizhao"/>
+    <Button
+        android:layout_marginTop="9dp"
+        android:layout_gravity="center"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:id="@+id/tianqi"
+        android:background="@drawable/btn_1"
+        android:text="实时天气"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"/>
+</LinearLayout>

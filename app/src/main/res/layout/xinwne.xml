@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.xinwne"
+    android:orientation="vertical">
+   <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:orientation="vertical">
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="100dp"
+               android:id="@+id/biaoti"
+               android:textSize="25dp"/>
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="100dp">
+
+               <ImageView
+                   android:layout_marginTop="15dp"
+                   android:layout_marginLeft="20dp"
+                   android:layout_width="60dp"
+                   android:layout_height="60dp"
+                   android:src="@mipmap/q3"/>
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:orientation="vertical">
+                   <TextView
+                       android:layout_marginTop="15dp"
+                       android:layout_marginLeft="10dp"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="邢玥峣"
+                       android:textSize="15dp"/>
+                   <TextView
+                       android:layout_marginTop="15dp"
+                       android:layout_marginLeft="10dp"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="自由撰稿人"
+                       android:textSize="15dp"/>
+               </LinearLayout>
+
+           </LinearLayout>
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:id="@+id/zhengwen"/>
+           <ImageView
+               android:layout_width="200dp"
+               android:layout_height="200dp"
+               android:id="@+id/tupian"/>
+       </LinearLayout>
+
+
+   </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

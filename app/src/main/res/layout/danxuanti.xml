@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".tiku.disanti"
+    android:orientation="vertical">
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1、我国城市人均日产垃圾量是多少？"
+        android:textSize="30dp"/>
+    <CheckBox
+        android:id="@+id/A"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="0.7 - 0.8 kg"
+        android:textSize="20dp"/>
+    <CheckBox
+        android:id="@+id/B"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="2 kg"
+        android:textSize="20dp"/>
+    <CheckBox
+        android:id="@+id/C"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="1.5 kg"
+        android:textSize="20dp"/>
+    <CheckBox
+        android:id="@+id/D"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="1.0 - 1.2 kg"
+        android:textSize="20dp"/>
+
+</LinearLayout>

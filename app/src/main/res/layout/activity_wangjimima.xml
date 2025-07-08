@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+<!--    <ImageView-->
+<!--        android:background="@drawable/et_smallqq"-->
+<!--        android:layout_width="350dp"-->
+<!--        android:layout_height="70dp"-->
+<!--        android:layout_marginTop="80dp"/>-->
+<!--    &lt;!&ndash;        android:src="@drawable/smallqq" />&ndash;&gt;-->
+    <TextView
+        android:background="@drawable/et_smallqq"
+        android:layout_width="350dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="80dp"
+        android:text="重新获取密码"
+        android:gravity="center"
+        android:textSize="30dp"
+        />
+    <FrameLayout
+        android:layout_width="350dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="50dp" >
+
+        <EditText
+            android:id="@+id/shuru"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/et_smallqq"
+            android:hint="账号/手机号/邮箱"
+            android:textSize="20sp"
+            android:gravity="center"/>
+
+        <ImageView
+            android:id="@+id/iv_et_num_delete"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/et_delete" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="350dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="20dp" >
+
+        <TextView
+            android:id="@+id/xianshi"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/et_smallqq"
+            android:hint="显示密码"
+            android:maxLines="1"
+            android:textSize="20sp"
+            android:gravity="center"/>
+
+        <ImageView
+            android:id="@+id/iv_et_pwd_delete"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/et_delete" />
+        <ImageView
+            android:id="@+id/iv_et_pwd_see"
+            android:layout_width="30dp"
+            android:layout_height="20dp"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/et_pwd_no" />
+    </FrameLayout>
+
+
+    <Button
+        android:layout_marginTop="20dp"
+        android:background="@drawable/et_smallqq"
+        android:layout_width="350dp"
+        android:layout_height="70dp"
+        android:id="@+id/chazhao"
+        android:text="点击获取"
+        android:onClick="login"/>
+
+</LinearLayout>
