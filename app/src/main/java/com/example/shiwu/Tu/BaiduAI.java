@@ -34,7 +34,7 @@ public class BaiduAI {
             public void run() {
                 // 请求url
                 System.out.println ("请求天行数据");
-                String key = "3ecbc5fab9fc237c77649a22c4af187e";  //你的apikey，天行数据控制台个人中心
+                String key = "6f133a1b56bdc2ae2e99e7b3c1e59840";  //你的apikey，天行数据控制台个人中心
 
                String encode = null;
                 try {
