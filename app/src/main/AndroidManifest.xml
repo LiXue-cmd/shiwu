@@ -1,51 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools">
+    package="com.example.shiwu">
 
+    <!-- 权限声明 -->
+    <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.CAMERA" />
-    <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <!-- 相机硬件要求（可选） -->
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/q9"
+        android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:networkSecurityConfig="@xml/http_set"
-        android:roundIcon="@mipmap/q9"
-        android:supportsRtl="true"
-        android:theme="@style/Theme.Design.Light.NoActionBar">
-        <activity android:name=".Activity.weikaifa"></activity>
-        <activity android:name=".Activity.xinwne" />
-        <activity android:name=".Activity.paihangbang" />
-        <activity android:name=".Activity.ceshiti" />
-        <activity android:name=".Activity.Tianqi" />
-        <activity android:name=".Activity.Aishitu" />
-        <activity android:name=".Activity.fenlei4" />
-        <activity android:name=".Activity.fenlei3" />
-        <activity android:name=".Activity.fenlei2" />
-        <activity android:name=".Activity.fenlei1" />
-        <activity android:name=".Activity.guanggao">
+        android:theme="@style/Theme.AppCompat.Light.DarkActionBar">
 
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Activity.wangjimima" />
-        <activity android:name=".Activity.Register" />
-        <activity android:name=".Activity.shipin" />
-        <activity android:name=".Activity.gerenxinxi" />
-        <activity android:name=".Activity.dati" />
-        <activity android:name=".Activity.LoginActivity" />
-        <activity android:name=".Activity.StartActivity" />
-        <activity android:name=".Activity.MainActivity">
 
-        </activity>
-
+        <!-- FileProvider配置 -->
         <provider
             android:name="androidx.core.content.FileProvider"
             android:authorities="com.example.shiwu.fileprovider"
@@ -55,6 +40,7 @@
                 android:name="android.support.FILE_PROVIDER_PATHS"
                 android:resource="@xml/file_paths" />
         </provider>
+
     </application>
 
 </manifest>
