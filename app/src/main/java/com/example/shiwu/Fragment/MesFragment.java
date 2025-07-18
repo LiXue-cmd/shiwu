@@ -11,41 +11,38 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
-import com.example.shiwu.Activity.Aishitu;
-import com.example.shiwu.Activity.Tianqi;
+// 修复导入路径，根据实际Aishitu类所在包调整
+import com.example.shiwu.Activity.Aishitu;  // 假设Aishitu在com.example.shiwu包下
+import com.example.shiwu.Activity.Tianqi;    // 假设Tianqi在com.example.shiwu包下
 import com.example.shiwu.R;
-
-import java.io.File;
 
 public class MesFragment extends Fragment {
 
-    private File photoFile = null;
-    private Button shibie,tianqi;
+    private Button shibie, tianqi;
     static final int REQUEST_IMAGE_CAPTURE = 1;
+
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_mes, container, false);
-        
-        
-        shibie=view.findViewById (R.id.paizhao);
-        tianqi=view.findViewById (R.id.tianqi);
-        shibie.setOnClickListener (new View.OnClickListener () {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent (getActivity(), Aishitu.class));
-            }
-         
-        });
-        tianqi.setOnClickListener (new View.OnClickListener () {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent (getActivity(), Tianqi.class));
-            }
 
+        shibie = view.findViewById(R.id.paizhao);
+        tianqi = view.findViewById(R.id.tianqi);
+
+        shibie.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getActivity(), Aishitu.class));
+            }
+        });
+
+        tianqi.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getActivity(), Tianqi.class));
+            }
         });
 
         return view;
     }
-
 }
